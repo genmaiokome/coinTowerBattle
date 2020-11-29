@@ -13,9 +13,13 @@
 		614A3BD025737F680039AB94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614A3BCE25737F680039AB94 /* Main.storyboard */; };
 		614A3BD225737F690039AB94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614A3BD125737F690039AB94 /* Assets.xcassets */; };
 		614A3BD525737F690039AB94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614A3BD325737F690039AB94 /* LaunchScreen.storyboard */; };
+		614A3BDD25737FEE0039AB94 /* TitleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614A3BDC25737FEE0039AB94 /* TitleScene.swift */; };
+		614A3BDF257382960039AB94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 614A3BDE257382960039AB94 /* GoogleService-Info.plist */; };
+		EBB3203941DE3D9F48F9FD41 /* Pods_coinTowerBattle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88013AB2F4897F43CF95DE6C /* Pods_coinTowerBattle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204D54143783D06268C17E2F /* Pods-coinTowerBattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coinTowerBattle.release.xcconfig"; path = "Target Support Files/Pods-coinTowerBattle/Pods-coinTowerBattle.release.xcconfig"; sourceTree = "<group>"; };
 		614A3BC525737F680039AB94 /* coinTowerBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coinTowerBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614A3BC825737F680039AB94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		614A3BCA25737F680039AB94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		614A3BD125737F690039AB94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614A3BD425737F690039AB94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614A3BD625737F690039AB94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		614A3BDC25737FEE0039AB94 /* TitleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScene.swift; sourceTree = "<group>"; };
+		614A3BDE257382960039AB94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		88013AB2F4897F43CF95DE6C /* Pods_coinTowerBattle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coinTowerBattle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA103CD2C5C1448FFF9AE95F /* Pods-coinTowerBattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coinTowerBattle.debug.xcconfig"; path = "Target Support Files/Pods-coinTowerBattle/Pods-coinTowerBattle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB3203941DE3D9F48F9FD41 /* Pods_coinTowerBattle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				614A3BC725737F680039AB94 /* coinTowerBattle */,
 				614A3BC625737F680039AB94 /* Products */,
+				902A40584D12C7FBC6F36B35 /* Pods */,
+				A792737130056DD812F35157 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,32 @@
 				614A3BC825737F680039AB94 /* AppDelegate.swift */,
 				614A3BCA25737F680039AB94 /* SceneDelegate.swift */,
 				614A3BCC25737F680039AB94 /* ViewController.swift */,
+				614A3BDC25737FEE0039AB94 /* TitleScene.swift */,
 				614A3BCE25737F680039AB94 /* Main.storyboard */,
 				614A3BD125737F690039AB94 /* Assets.xcassets */,
 				614A3BD325737F690039AB94 /* LaunchScreen.storyboard */,
 				614A3BD625737F690039AB94 /* Info.plist */,
+				614A3BDE257382960039AB94 /* GoogleService-Info.plist */,
 			);
 			path = coinTowerBattle;
+			sourceTree = "<group>";
+		};
+		902A40584D12C7FBC6F36B35 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA103CD2C5C1448FFF9AE95F /* Pods-coinTowerBattle.debug.xcconfig */,
+				204D54143783D06268C17E2F /* Pods-coinTowerBattle.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A792737130056DD812F35157 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88013AB2F4897F43CF95DE6C /* Pods_coinTowerBattle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 614A3BD925737F690039AB94 /* Build configuration list for PBXNativeTarget "coinTowerBattle" */;
 			buildPhases = (
+				DF7C1E8C8F6EDD1604232E90 /* [CP] Check Pods Manifest.lock */,
 				614A3BC125737F680039AB94 /* Sources */,
 				614A3BC225737F680039AB94 /* Frameworks */,
 				614A3BC325737F680039AB94 /* Resources */,
+				F34F95395B28945CD2C8A34D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +159,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				614A3BD525737F690039AB94 /* LaunchScreen.storyboard in Resources */,
+				614A3BDF257382960039AB94 /* GoogleService-Info.plist in Resources */,
 				614A3BD225737F690039AB94 /* Assets.xcassets in Resources */,
 				614A3BD025737F680039AB94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF7C1E8C8F6EDD1604232E90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coinTowerBattle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34F95395B28945CD2C8A34D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coinTowerBattle/Pods-coinTowerBattle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coinTowerBattle/Pods-coinTowerBattle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coinTowerBattle/Pods-coinTowerBattle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		614A3BC125737F680039AB94 /* Sources */ = {
@@ -141,6 +217,7 @@
 				614A3BCD25737F680039AB94 /* ViewController.swift in Sources */,
 				614A3BC925737F680039AB94 /* AppDelegate.swift in Sources */,
 				614A3BCB25737F680039AB94 /* SceneDelegate.swift in Sources */,
+				614A3BDD25737FEE0039AB94 /* TitleScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +359,7 @@
 		};
 		614A3BDA25737F690039AB94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA103CD2C5C1448FFF9AE95F /* Pods-coinTowerBattle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,12 +372,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.watanabe.ryosuke.coinTowerBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		614A3BDB25737F690039AB94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204D54143783D06268C17E2F /* Pods-coinTowerBattle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.watanabe.ryosuke.coinTowerBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
