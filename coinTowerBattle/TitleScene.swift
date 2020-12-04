@@ -10,14 +10,17 @@ import SpriteKit
 
 class TitleScene: SKScene {
     
-    
+    let userDefaults:UserDefaults = UserDefaults.standard
     
     override func didMove(to view: SKView) {
         backgroundColor = UIColor(red: 0.15, green: 0.75, blue: 0.90, alpha: 1)
-    
+        
+        var name = userDefaults.string(forKey: "NAME") ?? "名無し"
+
         setupLabel()
     }
     
+
     func setupLabel() {
         
         let freeMatchTexture = SKTexture(imageNamed: "フリーマッチ")
@@ -43,10 +46,23 @@ class TitleScene: SKScene {
         frendMatchSprite.run(jerkingAnimation)
         settingSprite.run(jerkingAnimation)
         
+        settingSprite.name = "setting"
+        
         addChild(freeMatchSprite)
         addChild(frendMatchSprite)
         addChild(settingSprite)
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as UITouch? {
+            let location = touch.location(in: self)
+            
+            if self.atPoint(location).name == "setting" {
+                
+            }
+            
+        }
     }
     
 }

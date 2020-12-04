@@ -14,13 +14,100 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQw-Sj-vsN">
+                                <rect key="frame" x="57" y="483" width="300" height="50"/>
+                                <state key="normal" backgroundImage="参加"/>
+                                <connections>
+                                    <action selector="joinMatchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFa-n6-HEE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE9-ZY-T2I">
+                                <rect key="frame" x="57" y="423" width="300" height="50"/>
+                                <state key="normal" backgroundImage="フリーマッチ"/>
+                                <connections>
+                                    <action selector="freeMatchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WAO-Qr-4vn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAO-Ff-onS">
+                                <rect key="frame" x="57" y="543" width="300" height="50"/>
+                                <state key="normal" backgroundImage="作成"/>
+                                <connections>
+                                    <action selector="createMatchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9P-Ph-WPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vO6-Zy-iz3">
+                                <rect key="frame" x="57" y="603" width="300" height="50"/>
+                                <state key="normal" backgroundImage="設定"/>
+                                <connections>
+                                    <action selector="settingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sOx-nk-zY4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JQw-Sj-vsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JjE-2n-I4p"/>
+                            <constraint firstItem="rE9-ZY-T2I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lkb-wY-Wnu"/>
+                            <constraint firstItem="rE9-ZY-T2I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dB6-yk-Qkr"/>
+                            <constraint firstItem="xAO-Ff-onS" firstAttribute="top" secondItem="JQw-Sj-vsN" secondAttribute="bottom" constant="10" id="gJL-7Z-D0r"/>
+                            <constraint firstItem="JQw-Sj-vsN" firstAttribute="top" secondItem="rE9-ZY-T2I" secondAttribute="bottom" constant="10" id="hIh-RG-YQS"/>
+                            <constraint firstItem="xAO-Ff-onS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jfA-Ih-HTM"/>
+                            <constraint firstItem="vO6-Zy-iz3" firstAttribute="top" secondItem="xAO-Ff-onS" secondAttribute="bottom" constant="10" id="uXI-OF-qZQ"/>
+                            <constraint firstItem="vO6-Zy-iz3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCu-5h-ttb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="119"/>
+            <point key="canvasLocation" x="1092.753623188406" y="154.6875"/>
+        </scene>
+        <!--First Time View Controller-->
+        <scene sceneID="I6l-2p-Ip0">
+            <objects>
+                <viewController storyboardIdentifier="name" modalPresentationStyle="fullScreen" id="2xC-k4-G4a" customClass="firstTimeViewController" customModule="coinTowerBattle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="luw-Mf-kUI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前を入力して下さい" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NsA-zI-9A3">
+                                <rect key="frame" x="20" y="244" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-hg-FPk">
+                                <rect key="frame" x="57" y="288" width="300" height="50"/>
+                                <state key="normal" backgroundImage="決定"/>
+                                <connections>
+                                    <action selector="nameDecideButton:" destination="2xC-k4-G4a" eventType="touchUpInside" id="y0r-ax-AvV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="piZ-fc-qet" firstAttribute="trailing" secondItem="NsA-zI-9A3" secondAttribute="trailing" constant="20" id="BmH-s0-JCL"/>
+                            <constraint firstItem="F3l-hg-FPk" firstAttribute="centerX" secondItem="luw-Mf-kUI" secondAttribute="centerX" id="NgK-9V-aF7"/>
+                            <constraint firstItem="F3l-hg-FPk" firstAttribute="top" secondItem="NsA-zI-9A3" secondAttribute="bottom" constant="10" id="PQG-Ls-kWu"/>
+                            <constraint firstItem="NsA-zI-9A3" firstAttribute="top" secondItem="piZ-fc-qet" secondAttribute="top" constant="200" id="UFA-cr-n3i"/>
+                            <constraint firstItem="NsA-zI-9A3" firstAttribute="leading" secondItem="piZ-fc-qet" secondAttribute="leading" constant="20" id="Woi-i6-WX0"/>
+                            <constraint firstItem="NsA-zI-9A3" firstAttribute="centerX" secondItem="luw-Mf-kUI" secondAttribute="centerX" id="sG0-t6-pKV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="piZ-fc-qet"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="NsA-zI-9A3" id="7wb-Iw-OkA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="txS-Dn-ziB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="162"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="フリーマッチ" width="300" height="50"/>
+        <image name="作成" width="300" height="50"/>
+        <image name="参加" width="300" height="50"/>
+        <image name="決定" width="300" height="50"/>
+        <image name="設定" width="300" height="50"/>
+    </resources>
 </document>

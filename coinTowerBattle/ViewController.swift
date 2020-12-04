@@ -7,26 +7,54 @@
 //
 
 import UIKit
-import SpriteKit
+import Firebase
 
 class ViewController: UIViewController {
-
+    
+    let userDefaults:UserDefaults = UserDefaults.standard
+    var alertController: UIAlertController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let skView = self.view as! SKView
+        view.backgroundColor = UIColor(red: 0, green: 200, blue: 255, alpha: 1)
         
-        skView.showsFPS = true
-        
-        skView.showsNodeCount = true
-        
-        let scene = TitleScene(size:skView.frame.size)
-        
-        skView.presentScene(scene)
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
 
-
+        let name = userDefaults.string(forKey: "NAME")
+        
+        if name == nil {
+            let firstTimeViewController = self.storyboard?.instantiateViewController(withIdentifier: "name")
+            self.present(firstTimeViewController!, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func freeMatchButton(_ sender: Any) {
+    }
+    
+    @IBAction func joinMatchButton(_ sender: Any) {
+    }
+    
+    @IBAction func createMatchButton(_ sender: Any) {
+        let roomNumber = String(Int.random(in: 100000 ..< 1000000))
+        print(roomNumber)
+        let roomRef = Firestore.firestore().collection(Const.roomPath).document()
+        let name = userDefaults.string(forKey: "NAME")
+        let roomDic = [
+            "name": name!,
+            "roomNumber": roomNumber
+        ] as [String : Any]
+        roomRef.setData(roomDic)
+    }
+    
+    @IBAction func settingButton(_ sender: Any) {
+        let firstTimeViewController = self.storyboard?.instantiateViewController(withIdentifier: "name")
+        self.present(firstTimeViewController!, animated: true, completion: nil)
+    }
+    
 }
 
