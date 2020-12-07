@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>89570386986-bs6pu8u2ltv9jj3naaiai4a3v2i2k55n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.89570386986-bs6pu8u2ltv9jj3naaiai4a3v2i2k55n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDeQPIoun4kUpwutw2OpC0AaPY-_ud0_oQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>89570386986</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.techacademy.watanabe.ryosuke.coinTowerBattle</string>
+	<key>PROJECT_ID</key>
+	<string>cointowerbattle</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cointowerbattle.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:89570386986:ios:7d2cf6b3960f976c390f53</string>
+	<key>DATABASE_URL</key>
+	<string>https://cointowerbattle.firebaseio.com</string>
+</dict>
+</plist>

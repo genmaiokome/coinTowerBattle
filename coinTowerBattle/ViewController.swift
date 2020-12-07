@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     let userDefaults:UserDefaults = UserDefaults.standard
     var alertController: UIAlertController!
+    var listener: ListenerRegistration!
+    var alertTextField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +36,27 @@ class ViewController: UIViewController {
     }
     
     @IBAction func freeMatchButton(_ sender: Any) {
+        
     }
     
     @IBAction func joinMatchButton(_ sender: Any) {
+        
+
+        
+        
+        
+      /*  if listener == nil {
+            let roomRef = Firestore.firestore().collection(Const.roomPath)
+            listener = roomRef.addSnapshotListener() { (querySnapshot, error) in
+                if let error = error {
+                    print("DEBUG_PRINT: snapshotの取得に失敗しました。\(error)")
+                    return
+                }
+            }
+        }
+        
+        Firestore.firestore().collection("rooms").document()*/
+        
     }
     
     @IBAction func createMatchButton(_ sender: Any) {
@@ -49,6 +69,15 @@ class ViewController: UIViewController {
             "roomNumber": roomNumber
         ] as [String : Any]
         roomRef.setData(roomDic)
+        
+        alertController = UIAlertController(title: "部屋番号：\(roomNumber)",
+                                    message: "この番号を友達に教えよう！",
+                                    preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK",
+                                        style: .default,
+                                        handler: nil))
+        present(alertController, animated: true)
+        
     }
     
     @IBAction func settingButton(_ sender: Any) {
